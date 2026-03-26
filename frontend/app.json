@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Men Amman",
+    "slug": "men-amman",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F5E6D0",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.menamman.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F5E6D0"
+      },
+      "package": "com.menamman.app"
+    },
+    "web": {
+      "favicon": "./src/assets/images/favicon.png"
+    }
+  }
+}
