@@ -6,6 +6,71 @@ A full-stack mobile marketplace connecting local independent sellers with buyers
 
 ---
 
+## 🔗 Demo Link (Expo Go)
+
+> **Scan with Expo Go** → `exp.host/@YOUR_EXPO_USERNAME/men-amman`
+
+To generate your shareable demo link:
+
+```bash
+# 1. Install EAS CLI
+npm install -g eas-cli
+
+# 2. Log in to Expo
+eas login
+
+# 3. Configure the project (one-time)
+eas init
+
+# 4. Publish an update (shareable Expo Go link)
+cd frontend
+npx expo publish
+```
+
+Your link will be: `https://expo.dev/@YOUR_USERNAME/men-amman`
+
+---
+
+## 🚀 Deploy to Production
+
+### Step 1 — Deploy Backend to Render (free)
+
+1. Push this repo to GitHub
+2. Go to [render.com](https://render.com) → **New** → **Blueprint**
+3. Connect your repo — Render auto-detects `render.yaml`
+4. Set these environment variables in the Render dashboard:
+   - `MONGODB_URI` → your MongoDB Atlas connection string
+   - `JWT_SECRET` → any random secret string
+   - `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET` → from [cloudinary.com](https://cloudinary.com) (free)
+   - `CLIENT_URL` → `*` (or your Expo app URL)
+5. Deploy — your API will be live at `https://men-amman-api.onrender.com`
+
+### Step 2 — Update Frontend API URL
+
+In [frontend/app.json](frontend/app.json), update `extra.apiUrl`:
+
+```json
+"extra": {
+  "apiUrl": "https://YOUR-APP-NAME.onrender.com/api"
+}
+```
+
+### Step 3 — Seed the Database
+
+```bash
+cd backend
+MONGODB_URI=your_atlas_uri node utils/seed.js
+```
+
+### Step 4 — Publish Frontend
+
+```bash
+cd frontend
+npx expo publish
+```
+
+---
+
 ## Quick Start
 
 ### Prerequisites

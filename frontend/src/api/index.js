@@ -1,9 +1,12 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Constants from 'expo-constants';
 
-// Change this to your backend URL
-const API_URL = 'http://10.0.2.2:5000/api'; // Android emulator
-// const API_URL = 'http://localhost:5000/api'; // iOS simulator / web
+// Priority: app.json extra.apiUrl → env var → localhost fallback
+const API_URL =
+  Constants.expoConfig?.extra?.apiUrl ||
+  process.env.EXPO_PUBLIC_API_URL ||
+  'http://localhost:5000/api';
 
 const api = axios.create({
   baseURL: API_URL,
