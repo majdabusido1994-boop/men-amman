@@ -1,6 +1,6 @@
 [build]
   base    = "frontend"
-  command = "npm install && npx expo export --platform web"
+  command = "npm ci && npx expo export --platform web"
   publish = "dist"
 
 [build.environment]
