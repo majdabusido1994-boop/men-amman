@@ -6,3 +6,8 @@
 [build.environment]
   EXPO_PUBLIC_API_URL = "https://men-amman-api.onrender.com/api"
   NODE_VERSION        = "18"
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
