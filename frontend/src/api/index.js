@@ -1,12 +1,9 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import Constants from 'expo-constants';
 
-// Priority: app.json extra.apiUrl → env var → localhost fallback
 const API_URL =
-  Constants.expoConfig?.extra?.apiUrl ||
   process.env.EXPO_PUBLIC_API_URL ||
-  'http://localhost:5000/api';
+  'https://men-amman-api.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
