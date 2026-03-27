@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet, ActivityIndicator } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+import { View as LinearGradient } from 'react-native'; // web shim: expo-linear-gradient not needed for web
 import { COLORS, FONTS, RADIUS, SHADOWS } from '../../theme';
 
 const GradientButton = ({
