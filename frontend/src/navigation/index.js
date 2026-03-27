@@ -12,19 +12,18 @@ import WelcomeScreen from '../screens/auth/WelcomeScreen';
 import LoginScreen from '../screens/auth/LoginScreen';
 import RegisterScreen from '../screens/auth/RegisterScreen';
 
-// Main Screens
-import HomeScreen from '../screens/home/HomeScreen';
-import SearchScreen from '../screens/search/SearchScreen';
-import ConversationsScreen from '../screens/messages/ConversationsScreen';
-import ProfileScreen from '../screens/profile/ProfileScreen';
-
-// Stack Screens
-import ProductDetailScreen from '../screens/product/ProductDetailScreen';
-import ShopProfileScreen from '../screens/shop/ShopProfileScreen';
-import CreateShopScreen from '../screens/shop/CreateShopScreen';
-import AddProductScreen from '../screens/shop/AddProductScreen';
-import ChatScreen from '../screens/messages/ChatScreen';
-import CreateDropScreen from '../screens/drops/CreateDropScreen';
+// Main Screens — temporarily stubbed to find web crash
+import { Text as RNText } from 'react-native';
+const HomeScreen = () => <View><RNText>Home</RNText></View>;
+const SearchScreen = () => <View><RNText>Search</RNText></View>;
+const ConversationsScreen = () => <View><RNText>Messages</RNText></View>;
+const ProfileScreen = () => <View><RNText>Profile</RNText></View>;
+const ProductDetailScreen = () => <View><RNText>Product</RNText></View>;
+const ShopProfileScreen = () => <View><RNText>Shop</RNText></View>;
+const CreateShopScreen = () => <View><RNText>Create Shop</RNText></View>;
+const AddProductScreen = () => <View><RNText>Add Product</RNText></View>;
+const ChatScreen = () => <View><RNText>Chat</RNText></View>;
+const CreateDropScreen = () => <View><RNText>Drop</RNText></View>;
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
