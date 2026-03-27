@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd frontend && npm ci && npx expo export --platform web",
+  "outputDirectory": "frontend/dist",
+  "framework": null,
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "env": {
+    "EXPO_PUBLIC_API_URL": "https://men-amman-api.onrender.com/api"
+  }
+}
