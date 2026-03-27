@@ -25,16 +25,7 @@
       "favicon": "./src/assets/images/favicon.png"
     },
     "extra": {
-      "apiUrl": "https://men-amman-api.onrender.com/api",
-      "eas": {
-        "projectId": ""
-      }
-    },
-    "runtimeVersion": {
-      "policy": "sdkVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/YOUR_PROJECT_ID"
+      "apiUrl": "https://men-amman-api.onrender.com/api"
     }
   }
 }
