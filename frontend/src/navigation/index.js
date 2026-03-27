@@ -7,10 +7,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { COLORS, FONTS, SHADOWS } from '../theme';
 import { useAuth } from '../context/AuthContext';
 
-// Auth Screens
-import WelcomeScreen from '../screens/auth/WelcomeScreen';
-import LoginScreen from '../screens/auth/LoginScreen';
-import RegisterScreen from '../screens/auth/RegisterScreen';
+// Auth Screens — stubbed
+import { Text as RNText2 } from 'react-native';
+const WelcomeScreen = () => <View><RNText2>Welcome</RNText2></View>;
+const LoginScreen = () => <View><RNText2>Login</RNText2></View>;
+const RegisterScreen = () => <View><RNText2>Register</RNText2></View>;
 
 // Main Screens — temporarily stubbed to find web crash
 import { Text as RNText } from 'react-native';
