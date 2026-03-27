@@ -38,7 +38,7 @@ class ErrorBoundary extends React.Component {
 
 const Navigation = () => {
   const { loading } = useAuth();
-  if (loading) return <View style={{ flex: 1, backgroundColor: COLORS.background }} />;
+  if (loading) return <View style={{ flex: 1, backgroundColor: 'red' }}><Text style={{ color: 'white', fontSize: 24, padding: 40 }}>LOADING...</Text></View>;
   return (
     <ErrorBoundary>
       <NavigationContainer>
